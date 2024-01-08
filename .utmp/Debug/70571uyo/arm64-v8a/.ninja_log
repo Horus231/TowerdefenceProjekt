@@ -1,0 +1,9 @@
+# ninja log v5
+47	3117	7263577718757568	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	99f8694d48b469dd
+76	3248	7263577719577308	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	8a833cb8515d0a23
+1	3290	7263577719947186	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	fc89f7ee546fb3ed
+56	3296	7263577719067470	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	c4d2541356242fea
+66	3364	7263577722452651	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	dbab45a7a54d34e4
+12	3388	7263577722712573	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	5f052495cf518a3a
+3126	4254	7263577731747304	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	487f3045ea932eb6
+4259	4538	7263577733858559	C:/Users/exhor/Towerdefence/Library/PramData/AndroidApplicationController/Cache/com.HBRS.Towerdefence/gradle-project/unityLibrary/build/intermediates/cxx/Debug/70571uyo/obj/arm64-v8a/libgame.so	71afd434ac6b14c3
