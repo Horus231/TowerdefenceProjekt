@@ -5,9 +5,9 @@ public class LifeManager : MonoBehaviour
     public int lifeCount = 3;  // Number of lives
     public int goldValue = 10; // Gold value received when object is destroyed
 
-    public void ReduceLife()
+    public void ReduceLife(int amount)
     {
-        lifeCount--;
+        lifeCount -= amount;
         if (lifeCount <= 0)
         {
             if (GoldManager.Instance != null)

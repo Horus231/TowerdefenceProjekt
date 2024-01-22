@@ -25,11 +25,10 @@ public class Cannon : MonoBehaviour
         {
             if (hitCollider.gameObject.CompareTag("Target"))
             {
-                // Assuming the targets have a script named 'Target' which handles damage
-                Target target = hitCollider.gameObject.GetComponent<Target>();
+                LifeManager target = hitCollider.gameObject.GetComponent<LifeManager>();
                 if (target != null)
                 {
-                    target.TakeDamage(damage);
+                    target.ReduceLife(damage);
                 }
             }
         }

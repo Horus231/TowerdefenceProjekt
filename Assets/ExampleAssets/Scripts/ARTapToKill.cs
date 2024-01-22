@@ -18,7 +18,7 @@ public class ARTapToKill : MonoBehaviour
                     LifeManager lifeManager = hit.collider.gameObject.GetComponent<LifeManager>();
                     if (lifeManager != null)
                     {
-                        lifeManager.ReduceLife();
+                        lifeManager.ReduceLife(1);
                     }
                 }
             }

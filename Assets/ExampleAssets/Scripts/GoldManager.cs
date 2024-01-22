@@ -1,12 +1,13 @@
 using UnityEngine;
-using TMPro; // Namespace for TextMeshPro
+using TMPro; 
 
 public class GoldManager : MonoBehaviour
 {
     public static GoldManager Instance { get; private set; }
 
-    public TextMeshProUGUI goldTextTMP; // Reference to the TextMeshProUGUI that displays the gold amount
-    // If you're using 3D/2D TextMeshPro, use 'public TextMeshPro goldTextTMP;' instead
+    public TextMeshProUGUI goldTextTMP;
+    public TextMeshProUGUI healthTextTMP;
+    private int health = 11;
     private int goldAmount = 0;
 
     void Awake()
@@ -43,6 +44,35 @@ public class GoldManager : MonoBehaviour
         {
             goldAmount -= amount;
             UpdateGoldTextTMP();
+        }
+    }
+
+    public void UpdateHealthTextTMP(int health)
+    {
+        healthTextTMP.text = "Health: " + health.ToString();
+    }
+
+    public void DeathMessage()
+    {
+        healthTextTMP.text = "Game Over";
+    }
+
+    public bool alive()
+    {
+        if (health <= 0)
+        {
+            DeathMessage();
+            return false;
+        }
+        return true;
+    }
+
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+        if (alive())
+        {
+            UpdateHealthTextTMP(health);
         }
     }
 }

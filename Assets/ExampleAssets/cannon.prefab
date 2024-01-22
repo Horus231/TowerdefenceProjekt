@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fcd821b3fc4b3448501df82b2a6da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
-  fireRate: 1
+  range: 1
+  fireRate: 0.5
   damage: 1
 --- !u!1 &135976
 GameObject:

@@ -44,11 +44,8 @@ GameObject:
   - component: {fileID: 5446477390807014369}
   - component: {fileID: 5446477390807014375}
   - component: {fileID: 5446477390807014372}
-  - component: {fileID: 3571097246289400604}
-  - component: {fileID: -7420735690317034670}
   - component: {fileID: 6360722081632873563}
-  - component: {fileID: 3028666522714676970}
-  - component: {fileID: 5348813965989407953}
+  - component: {fileID: 5402385156141448633}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Target
@@ -119,7 +116,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -138,44 +135,14 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.145118
   m_Height: 0.73960495
   m_Direction: 1
   m_Center: {x: -0.0075883865, y: 0.33836842, z: 0.00768137}
---- !u!114 &3571097246289400604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5446477390807014373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 626cf52c658ce0f4b87d66f2f4b5e34f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arCamera: {fileID: 0}
-  hp: 2
---- !u!114 &-7420735690317034670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5446477390807014373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9616d5b3c976b4a41b388b47354a1bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 6878367607109352796, guid: 13fc90df77702a04dac18458b9188f20,
-    type: 3}
-  movementSpeed: 0.1
-  rotationSpeed: 0
 --- !u!114 &6360722081632873563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeCount: 3
   goldValue: 10
---- !u!114 &3028666522714676970
+--- !u!114 &5402385156141448633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,24 +166,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5446477390807014373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89ab25483e1d49e448f801da91d85c4e, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c9cc6ca8956a274d823c989e2e6c4d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
---- !u!114 &5348813965989407953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5446477390807014373}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6c7b560c4fc4a640ad8b5f5832d7176, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tower: {fileID: 6878367607109352796, guid: 13fc90df77702a04dac18458b9188f20, type: 3}
   speed: 0.1
+  damage: 10
 --- !u!1 &5446477390958229031
 GameObject:
   m_ObjectHideFlags: 0

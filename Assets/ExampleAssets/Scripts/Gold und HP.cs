@@ -10,7 +10,6 @@ public class GoldundHP : MonoBehaviour
     public static int gold=0;
     public static int hp=0;
 
-    // Start is called before the first frame update
     void Start()
     {
         nachrichthp = GetComponent<TextMeshProUGUI>();
@@ -18,7 +17,6 @@ public class GoldundHP : MonoBehaviour
         hp=50;
     }
 
-    // Update is called once per frame
     void Update()
     {
         nachrichthp.SetText("" + hp);
